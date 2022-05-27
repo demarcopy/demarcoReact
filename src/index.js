@@ -3,6 +3,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from "./App.js";
 import "./estilos.css"
+import * as bootstrap from "bootstrap"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Agarrar una app que ya existe de REACT y mostrarla en el DOM
 

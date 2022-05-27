@@ -1,5 +1,13 @@
-const App = () => {
-    return <h1>Hola mundo</h1>
+ import FooterPrincipal from "./components/Footer"
+ import Navbar  from "./components/Navbar";
+
+ 
+ function App ()  {
+    return (
+     <>
+        <Navbar />
+     </>
+    );
 }
 
 export default App
