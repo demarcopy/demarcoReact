@@ -1,7 +1,10 @@
 import React from 'react'
+import CartWidget from "./CartWidget"
 
 const Navbar = () => {
+ 
   return (
+    <>
     <nav className="navbar navbar-expand-lg bg-light">
     <div className="container-fluid">
       <a className="navbar-brand" href="#">GamePedia</a>
@@ -16,8 +19,11 @@ const Navbar = () => {
           <a className="nav-link disabled">Contacto </a>
         </div>
       </div>
+      <CartWidget/>
     </div>
   </nav>
+ 
+  </>
   )
 }
 
