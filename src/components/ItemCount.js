@@ -1,0 +1,33 @@
+import React from 'react'
+import { useState } from 'react'
+
+const ItemCount = ({Stock, StockInitial, onAdd}) => {
+  const [contador, setContador] = useState(StockInitial)	
+  
+  const aumentarContador= () =>{
+      if (contador < Stock) {
+        setContador(contador+1)
+      }
+  }
+  const bajarContador =() =>{
+    if (contador > 0) {
+      setContador(contador-1)
+    }
+  }
+ const confirmarContador =() =>{
+   if (contador > 0) {
+    console.log("Agregado al carrito")
+   }
+  }
+    return (
+      <>
+      <p> Cantidad  {contador}</p>
+      <button onClick={aumentarContador} >Aumentar </button>
+      <button onClick={bajarContador} >Disminuir </button>
+      <button onClick={confirmarContador} >Agregar al carrito </button>
+      </>
+  )
+   
+}
+
+export default ItemCount
