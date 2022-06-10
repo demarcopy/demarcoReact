@@ -1,5 +1,5 @@
 import React from 'react'
-import Item from './Item'
+import Item from '../Item/Item'
 
 const ItemList = ({products}) => {
   return (
@@ -8,6 +8,10 @@ const ItemList = ({products}) => {
          id={p.id}
          name={p.name}
          image={p.image}
+         key={p.id}
+         stock={p.stock}
+         description={p.description}
+         price={p.price}
          />
         )
   )
