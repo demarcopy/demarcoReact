@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
-import ItemList from '../ItemList/ItemList'
-import { traerProductos } from '../../utils/productos'
+import ItemList from './ItemList'
+import { getItems } from '../../utils/productos'
+import './estilosproductos.css'
+
 
 
 
@@ -9,7 +11,7 @@ const ItemListContainer = () => {
   const [items, setItems] = useState([])
  
   useEffect(() => {
-    traerProductos() 
+    getItems() 
     .then( r => setItems(r))
     
   }, [])
@@ -18,8 +20,12 @@ const ItemListContainer = () => {
 
   return (
     <>
+    <div className='ItemsContainer'>
+
     <ItemList products={items} />
+    </div>
   
+   
     </>
   )
 }

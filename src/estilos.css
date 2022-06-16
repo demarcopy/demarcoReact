@@ -5,3 +5,33 @@
     text-align: center;
     margin-top: 10%;
 }
+
+
+.Footer{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brands{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin: 2px;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin: 2px;
+    font-size: 18px;
+}

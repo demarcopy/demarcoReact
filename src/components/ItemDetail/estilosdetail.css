@@ -1,0 +1,13 @@
+.ItemDetail {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 2px solid black;
+}
+
+
+.ItemDetail img {
+    width:  600px;
+    height: 400px;
+    margin: 10px;
+}   
