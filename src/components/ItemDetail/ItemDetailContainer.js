@@ -19,7 +19,6 @@ const ItemDetailContainer = () => {
       setLoading(false)
     }, [id])
     
-    console.log(loading)
     const volverTienda = () => {
       window.history.back()
     }
