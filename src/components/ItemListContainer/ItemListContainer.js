@@ -1,32 +1,32 @@
 import { useState, useEffect } from 'react'
 import ItemList from './ItemList'
-import { getItems } from '../../utils/productos'
+import { getItems, getItemBycategory } from '../../utils/productos'
+import {useParams} from 'react-router-dom'
 import './estilosproductos.css'
-
-
+import Loading from '../../utils/Loading'
 
 
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([])
- 
-  useEffect(() => {
-    getItems() 
-    .then( r => setItems(r))
-    
-  }, [])
- 
 
+  const {category} = useParams()
+
+   useEffect(() => {
+   category === undefined ? getItems().then(items => setItems(items)) : getItemBycategory(category).then(items => setItems(items))
+  }, [category])
+   
+  
 
   return (
-    <>
     <div className='ItemsContainer'>
-
-    <ItemList products={items} />
+    {
+      items.length > 0 ?  <ItemList products={items} />:  <Loading/>
+    }
     </div>
   
    
-    </>
+   
   )
 }
 

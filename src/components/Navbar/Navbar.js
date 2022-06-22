@@ -1,29 +1,37 @@
 import React from 'react'
 import CartWidget from "../CartWidget/CartWidget"
+import {NavLink, Link} from "react-router-dom"
+import { DropdownItem, DropdownMenu, DropdownToggle, NavItem, UncontrolledDropdown } from 'reactstrap'
 
 const Navbar = () => {
  
   return (
-    <>
-    <nav className="navbar navbar-expand-lg bg-light">
+    <nav id="navBar" className="navbar navbar-expand-lg bg-light">
     <div className="container-fluid">
-      <a className="navbar-brand" href="#">banshy clothes</a>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
+    <NavLink to="/" className="navbar-brand">banshy clothes</NavLink>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div className="navbar-nav">
-          <a className="nav-link active" aria-current="page" href="#">Inicio</a>
-          <a className="nav-link" href="#">Tienda</a>
-          <a className="nav-link" href="#">Recomendaciones</a>
-          <a className="nav-link">Contacto </a>
-        </div>
+        <NavItem>   
+        <NavLink to="/" >Inicio</NavLink>
+        </NavItem>  
+        <UncontrolledDropdown >
+        <DropdownToggle caret nav >
+          <NavLink to="/Tienda" >Tienda</NavLink>
+        </DropdownToggle> 
+         <DropdownMenu left>
+          <DropdownItem><Link to="/Canguros"> Canguros </Link></DropdownItem>
+          <DropdownItem><Link to="/Remeras"> Remeras y Sudaderas </Link></DropdownItem>
+          <DropdownItem><Link to="/Pantalones"> Pantalones </Link></DropdownItem>
+          <DropdownItem><Link to="/Championes"> Championes </Link></DropdownItem>
+        </DropdownMenu>
+        </UncontrolledDropdown>
+        <NavItem><NavLink to="/Recomendaciones"  >Ofertas</NavLink></NavItem>  
+        <NavItem> <NavLink to="/Contacto" >Contacto</NavLink> </NavItem>  
       </div>
-      <CartWidget/>
+    <CartWidget/>
     </div>
   </nav>
  
-  </>
+
   )
 }
 

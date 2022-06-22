@@ -3,9 +3,6 @@ import ItemCount from '../ItemCount/ItemCount'
 
 const ItemDetail = ({product}) => {
   return (
-    <>
-    <hr/>
-
   <div className='ItemDetail'  key={product.id}>
     <img src={product.image} alt={product.id}/> 
     <div>
@@ -14,12 +11,7 @@ const ItemDetail = ({product}) => {
       <p>Precio:{product.price}</p> 
       <ItemCount StockInitial={1} Stock={product.stock} />
     </div>
-
   </div>
-    
-    
-    
-    </>
   )
 }
 

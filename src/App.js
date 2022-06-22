@@ -1,17 +1,18 @@
  import Navbar  from "./components/Navbar/Navbar.js";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer.js";
-import ItemDetailContainer from "./components/ItemDetail/ItemDetailContainer.js";
+import Main from "./Main.js";
 import Footer from "./components/Footer/Footer.js";
+import {BrowserRouter} from "react-router-dom";
 
  
  function App ()  {
     return (
-     <>
-        <Navbar />
-        <ItemListContainer greeting="Bienvenido!"   />
-        <ItemDetailContainer />
-        <Footer/>
-     </>
+   
+       <BrowserRouter> 
+         <Navbar />
+         <Main/>
+         <Footer/>
+       </BrowserRouter>
+  
     );
 }
 
