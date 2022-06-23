@@ -16,17 +16,12 @@ const ItemListContainer = () => {
    category === undefined ? getItems().then(items => setItems(items)) : getItemBycategory(category).then(items => setItems(items))
   }, [category])
    
-  
-
   return (
     <div className='ItemsContainer'>
     {
       items.length > 0 ?  <ItemList products={items} />:  <Loading/>
     }
     </div>
-  
-   
-   
   )
 }
 
