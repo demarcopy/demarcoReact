@@ -1,12 +1,10 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
+import React,  { useState, useEffect } from 'react'
 import ItemDetail from './ItemDetail'
 import {getItemById} from '../../utils/productos'
 import {useParams} from 'react-router-dom'
 import './estilosdetail.css'
 import Loading from '../../utils/Loading'
 import {Button} from 'reactstrap'
-
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
@@ -31,7 +29,7 @@ const ItemDetailContainer = () => {
       >
       </Button> 
       </div>
-     {!loading ? <ItemDetail product={product}/> :   <Loading/>  }
+     {(!loading) ? <ItemDetail product={product}/> :   <Loading/>  }
     </div>
   )
 }

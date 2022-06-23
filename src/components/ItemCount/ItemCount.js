@@ -14,10 +14,8 @@ const ItemCount = ({Stock, StockInitial, onAdd}) => {
       setContador(contador-1)
     }
   }
- const confirmarContador =() =>{
-   if (contador > 0) {
-    console.log("Agregado al carrito")
-   }
+ const confirmarContador =(e) =>{
+    onAdd(contador)
   }
     return (
       <>
