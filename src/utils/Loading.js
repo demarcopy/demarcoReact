@@ -1,11 +1,20 @@
 import React from 'react'
-import { Spinner } from 'reactstrap';
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
+import { Spinner } from 'reactstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Loading = () => {
+export const Loading = () => {
   return (
-    <Spinner/>
+    <div>
+    <Skeleton 
+    count ={20}
+    />
+    </div>
   )
 }
 
-export default Loading
+
+export const LoadingSpinner = () => {
+  <Spinner/>
+}

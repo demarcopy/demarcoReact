@@ -6,7 +6,8 @@ export const productos = [
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, eget curabitur taciti duis lacus rhoncus parturient tincidunt, augue nascetur auctor nibh metus mus. ',
     image: 'https://mensfactory.com.uy/wp-content/uploads/2020/10/REMERA-LISA-NEGRA_01.jpg',
     stock: 5,
-    category: 'Remeras'
+    category: 'Remeras',
+    quantity: 0,
     },
     {
     id: 2,
@@ -15,7 +16,8 @@ export const productos = [
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, eget curabitur taciti duis lacus rhoncus parturient tincidunt, augue nascetur auctor nibh metus mus. ',
     image: 'https://http2.mlstatic.com/D_NQ_NP_833658-MLU49548127693_042022-O.webp',
     stock: 8,
-    category: 'Canguros'
+    category: 'Canguros',
+    quantity: 0,
     },
     {
     id: 3,
@@ -24,7 +26,8 @@ export const productos = [
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, eget curabitur taciti duis lacus rhoncus parturient tincidunt, augue nascetur auctor nibh metus mus. ',
     image: 'https://www.hallensteins.com/content/products/ab-baggy-carpenter-jean-washed-black-front-10003019.jpg?width=2058',
     stock: 1,
-    category: 'Pantalones'
+    category: 'Pantalones',
+    quantity: 0,
     },
     {
     id: 4,
@@ -33,7 +36,8 @@ export const productos = [
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, eget curabitur taciti duis lacus rhoncus parturient tincidunt, augue nascetur auctor nibh metus mus. ',
     image: 'https://ae01.alicdn.com/kf/HTB12E84bbys3KVjSZFnq6xFzpXai/Custom-Ftp-Men-Casual-T-Shirts-Man-Fashion-Cotton-Tops-Black-Size-S-3XL.jpg',
     stock: 4,
-    category: 'Remeras'
+    category: 'Remeras',
+    quantity: 0,
     },
     {
     id: 5,
@@ -42,7 +46,8 @@ export const productos = [
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, eget curabitur taciti duis lacus rhoncus parturient tincidunt, augue nascetur auctor nibh metus mus. ',
     image: 'https://falabella.scene7.com/is/image/Falabella/7375803_1?wid=800&hei=800&qlt=70',
     stock: 6,
-    category: 'Championes'
+    category: 'Championes',
+    quantity: 0,
     },
     {
     id: 6,
@@ -51,7 +56,8 @@ export const productos = [
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, eget curabitur taciti duis lacus rhoncus parturient tincidunt, augue nascetur auctor nibh metus mus. Primis netus himenaeos aliquam ac at lectus fermentum et maecenas nec urna, nostra nisi quisque torquent vehicula ridiculus vestibulum felis class ornare inceptos volutpat, purus posuere aliquet iaculis est aptent nisl nam diam condimentum.',
     image: 'https://www.thenextsole.com/storage/images/849557-006.png',
     stock: 36,
-    category: 'Championes'
+    category: 'Championes',
+    quantity: 0,
     },
     {
     id: 7,
@@ -60,7 +66,8 @@ export const productos = [
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, eget curabitur taciti duis lacus rhoncus parturient tincidunt, augue nascetur auctor nibh metus mus. ',
     image: 'https://m.media-amazon.com/images/I/51eTR23TTrL._AC_UX385_.jpg',
     stock: 4,
-    category: 'Chalecos'
+    category: 'Chalecos',
+    quantity: 0,
     },
     {
     id: 8,
@@ -69,7 +76,8 @@ export const productos = [
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, eget curabitur taciti duis lacus rhoncus parturient tincidunt, augue nascetur auctor nibh metus mus. ',
     image: 'https://i.ebayimg.com/images/g/YOcAAOSwSDtekCGU/s-l500.jpg',
     stock: 9,
-    category: 'Pantalones'
+    category: 'Pantalones',
+    quantity: 0,
     },
     {
     id: 9,
@@ -78,7 +86,8 @@ export const productos = [
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, eget curabitur taciti duis lacus rhoncus parturient tincidunt, augue nascetur auctor nibh metus mus. ',
     image: 'https://ae01.alicdn.com/kf/H8b8a4b3f79b6432bbb9e565b34771c57q/Bot-n-pantalones-de-los-hombres-versi-n-coreana-de-moda-de-la-calle-ins-de.jpg_Q90.jpg_.webp',
     stock: 1,
-    category: 'Pantalones'
+    category: 'Pantalones',
+    quantity: 0,
     },
     {
     id: 10,
@@ -87,7 +96,8 @@ export const productos = [
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, eget curabitur taciti duis lacus rhoncus parturient tincidunt, augue nascetur auctor nibh metus mus. ',
     image: 'https://ae01.alicdn.com/kf/S9c686a276dfa4bca90ce1daed270bc6aF/Pantalones-de-pierna-ancha-a-cuadros-para-hombre-ropa-de-calle-informal-de-Hip-Hop-a.jpg_Q90.jpg_.webp',
     stock: 5,
-    category: 'Pantalones'
+    category: 'Pantalones',
+    quantity: 0,
     },
     {
     id: 11,
@@ -96,7 +106,8 @@ export const productos = [
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, eget curabitur taciti duis lacus rhoncus parturient tincidunt, augue nascetur auctor nibh metus mus. ',
     image: 'https://ae01.alicdn.com/kf/S117cf590440448328b58702b9c1d23f09/Pantalones-vaqueros-Harem-de-Hip-Hop-para-hombre-pantal-n-holgado-de-marca-pantalones-de-ch.jpg_Q90.jpg_.webp',
     stock: 5,
-    category: 'Pantalones'
+    category: 'Pantalones',
+    quantity: 0,
     },
     {
     id: 12,
@@ -105,7 +116,8 @@ export const productos = [
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, eget curabitur taciti duis lacus rhoncus parturient tincidunt, augue nascetur auctor nibh metus mus. ',
     image: 'https://ae01.alicdn.com/kf/S28f5c8c5c6354e05989512d649d5a6abE/Pantalones-Cargo-para-hombre-pantal-n-t-ctico-militar-informal-con-m-ltiples-bolsillos-de-talla.jpg_Q90.jpg_.webp',
     stock: 5,
-    category: 'Pantalones'
+    category: 'Pantalones',
+    quantity: 0,
     },
     {
     id: 13,
@@ -114,7 +126,8 @@ export const productos = [
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, eget curabitur taciti duis lacus rhoncus parturient tincidunt, augue nascetur auctor nibh metus mus. ',
     image: 'https://m.media-amazon.com/images/I/51Yz1kN1PPL._AC_UL1000_.jpg',
     stock: 5,
-    category: 'Canguros' 
+    category: 'Canguros' ,
+    quantity: 0,
     },
     {
     id: 14,
@@ -123,7 +136,8 @@ export const productos = [
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, eget curabitur taciti duis lacus rhoncus parturient tincidunt, augue nascetur auctor nibh metus mus. ',
     image: 'https://m.media-amazon.com/images/I/714eflcpcsL._AC_UL1261_.jpg',
     stock: 5,
-    category: 'Remeras'
+    category: 'Remeras',
+    quantity: 0,
     },
     {
     id: 15,
@@ -132,7 +146,8 @@ export const productos = [
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, eget curabitur taciti duis lacus rhoncus parturient tincidunt, augue nascetur auctor nibh metus mus. ',
     image: 'https://m.media-amazon.com/images/I/81t4ijQdTyL._AC_UL1500_.jpg',
     stock: 5,
-    category: 'Remeras'
+    category: 'Remeras',
+    quantity: 0,
     },
     {
     id: 16,
@@ -141,7 +156,8 @@ export const productos = [
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, eget curabitur taciti duis lacus rhoncus parturient tincidunt, augue nascetur auctor nibh metus mus. ',
     image: 'https://http2.mlstatic.com/D_NQ_NP_898308-MLU49278233069_032022-O.webp',
     stock: 7,
-    category: 'Canguros'
+    category: 'Canguros',
+    quantity: 0,
     },
     {
     id: 17,
@@ -150,7 +166,8 @@ export const productos = [
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, eget curabitur taciti duis lacus rhoncus parturient tincidunt, augue nascetur auctor nibh metus mus. ',
     image: 'https://http2.mlstatic.com/D_NQ_NP_684767-MLU49434140989_032022-O.webp',
     stock: 7,
-    category: 'Canguros,'
+    category: 'Canguros',
+    quantity: 0,
     },
     {
     id: 18,
@@ -159,7 +176,8 @@ export const productos = [
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, eget curabitur taciti duis lacus rhoncus parturient tincidunt, augue nascetur auctor nibh metus mus. ',
     image: 'https://http2.mlstatic.com/D_NQ_NP_636433-MLU42662389423_072020-O.webp',
     stock: 7,
-    category: 'Chaleco'
+    category: 'Chaleco',
+    quantity: 0,
     }
 ]
 

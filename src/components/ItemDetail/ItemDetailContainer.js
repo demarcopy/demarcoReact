@@ -3,7 +3,7 @@ import ItemDetail from './ItemDetail'
 import {getItemById} from '../../utils/productos'
 import {useParams} from 'react-router-dom'
 import './estilosdetail.css'
-import Loading from '../../utils/Loading'
+import {Loading} from '../../utils/Loading'
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
@@ -15,8 +15,8 @@ const ItemDetailContainer = () => {
       .then( r =>
         {setProduct(r)
         setLoading(false)
-        }
-        )
+        })
+       
   }, [id])
   return (
     <>

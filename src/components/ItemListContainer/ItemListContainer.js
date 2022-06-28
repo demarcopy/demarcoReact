@@ -3,24 +3,46 @@ import ItemList from './ItemList'
 import { getItems, getItemBycategory } from '../../utils/productos'
 import {useParams} from 'react-router-dom'
 import './estilosproductos.css'
-import Loading from '../../utils/Loading'
-
+import {Loading} from '../../utils/Loading'
 
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([])
+  const [isLoading, setLoading] = useState(false)
 
   const {category} = useParams()
-
+/*  
+    No anda 
    useEffect(() => {
-   category === undefined ? getItems().then(items => setItems(items)) : getItemBycategory(category).then(items => setItems(items))
-  }, [category])
-   
+   category ?    getItemBycategory(category)  :  getItems()
+   .then( r =>setItems(r)  ) 
+}, [category])  */
+ 
+/* Anda bien */
+useEffect(() => {
+    if (category) {
+     getItemBycategory(category)
+     .then( r =>setItems(r))
+    } else{
+     getItems()
+     .then( r =>setItems(r))
+    }
+   }, [category]
+  )
+
+  /* Anda bien */
+/*  useEffect(() => {
+  getItemBycategory(category)
+  .then( r =>setItems(r))
+ }, [category])
+    */
+
+ 
   return (
     <div className='ItemsContainer'>
-    {
-      items.length > 0 ?  <ItemList products={items} />:  <Loading/>
-    }
+
+
+    { isLoading ? <Loading/> : <ItemList products={items} /> }
     </div>
   )
 }

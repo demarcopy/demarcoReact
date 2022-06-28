@@ -15,8 +15,14 @@ const ItemCount = ({Stock, StockInitial, onAdd}) => {
     }
   }
  const confirmarContador =(e) =>{
-    onAdd(contador)
+    if (contador > 0) {
+      onAdd(contador)
+    }  else{
+      console.log('No se agregaron productos')
+    }
+  
   }
+
     return (
       <>
       <p> Cantidad  {contador}</p>
