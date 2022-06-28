@@ -20,10 +20,10 @@ import './estilosCarrito.css'
 
 const Carrito = () => {
   
-  const {carrito, eliminarProducto, clearCart, itemsLenghtCart} = useContext(contextoCarrito)
+  const {carrito, eliminarProducto, clearCart, getSubtotal, getTotal,cartLenght } = useContext(contextoCarrito)
   
   const prueba = () => {
-  console.log(carrito)
+  console.log('Var Carrito',carrito)
   }
 
   return (
@@ -39,7 +39,10 @@ const Carrito = () => {
         alt=""
         />
         <div> 
-          {product.quantity}
+         Cantidad en carrito: {product.quantity}
+        </div>
+        <div>
+          Precio: {getSubtotal(product.price, product.quantity)}
         </div>
         <div>
           <button onClick={() =>{eliminarProducto(product.id)}}> Borrar producto</button>
@@ -47,11 +50,10 @@ const Carrito = () => {
        
       </div>
       )
-      
       }
  
-      <p>Cantidad {carrito[1]} </p>
-    
+      <h3>Precio total {getTotal()} </h3>
+      <h3>Items totales: {cartLenght()}</h3>
     </div> 
  
   <button onClick={prueba}> Ver carrito en consola</button>
@@ -59,7 +61,7 @@ const Carrito = () => {
  
  
   <button onClick={clearCart}> vaciarCarrito</button>
-  <button onClick={itemsLenghtCart()}> Length del carrito</button>  
+  <button><Link to="/tienda">Seguir comprando</Link></button>
 
 
     <Link to="/checkout"> Comprar</Link>

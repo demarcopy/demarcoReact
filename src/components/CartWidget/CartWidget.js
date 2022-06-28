@@ -5,14 +5,15 @@ import { contextoCarrito } from '../Contexto/cartContext'
 
 const CartWidget = () => {
 
-  const getContext = useContext(contextoCarrito)
+  const {cartLenght} = useContext(contextoCarrito)
  
 
  
   return (
     <>
     <Link to="/carrito"> Comprar</Link>
-    {getContext.cantidad_total}
+    <div className='itemsCart'> {cartLenght()}  </div>
+   
     <div className='material-symbols-outlined'>shopping_cart</div>
     </>
    

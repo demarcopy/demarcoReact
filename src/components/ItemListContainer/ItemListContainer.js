@@ -8,41 +8,34 @@ import {Loading} from '../../utils/Loading'
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([])
-  const [isLoading, setLoading] = useState(false)
+  const [isLoading, setLoading] = useState(true)
 
   const {category} = useParams()
-/*  
-    No anda 
-   useEffect(() => {
-   category ?    getItemBycategory(category)  :  getItems()
-   .then( r =>setItems(r)  ) 
-}, [category])  */
+  
  
-/* Anda bien */
+/* Anda bien sin loading*/
 useEffect(() => {
+  setLoading(true)
     if (category) {
      getItemBycategory(category)
-     .then( r =>setItems(r))
-    } else{
+     .then( r => 
+    {setItems(r)
+     setLoading(false)
+    })
+    } else {
      getItems()
-     .then( r =>setItems(r))
-    }
-   }, [category]
-  )
+     .then( r =>
+    {setItems(r)
+    setLoading(false)
+    })
+   }}, [category] )
 
-  /* Anda bien */
-/*  useEffect(() => {
-  getItemBycategory(category)
-  .then( r =>setItems(r))
- }, [category])
-    */
 
- 
+
   return (
     <div className='ItemsContainer'>
 
-
-    { isLoading ? <Loading/> : <ItemList products={items} /> }
+    { isLoading ? <h1> <Loading/> </h1> : <ItemList  products={items} /> }
     </div>
   )
 }
