@@ -1,0 +1,23 @@
+#navBarConteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+} 
+
+.navBar{
+    display: flex;
+}
+
+.tienda-navbar {
+    font-size: 16px;
+}
+
+.cartWidget{
+    position: absolute;
+    right: 2%;
+}
+
+.itemsCart{
+    color: red;
+    font-size: 20px;
+}

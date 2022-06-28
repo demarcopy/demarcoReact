@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
 import { Link } from 'react-router-dom'
 import { contextoCarrito } from '../Contexto/cartContext'
-
+import "../Navbar/estilosNavbar.css"
 
 const CartWidget = () => {
 
@@ -10,12 +10,10 @@ const CartWidget = () => {
 
  
   return (
-    <>
-    <Link to="/carrito"> Comprar</Link>
-    <div className='itemsCart'> {cartLenght()}  </div>
-   
-    <div className='material-symbols-outlined'>shopping_cart</div>
-    </>
+    <div className='cartWidget'>
+      <div className='itemsCart'> {cartLenght()}  </div>
+      <div className='material-symbols-outlined'><Link to="/carrito"> shopping_cart</Link> </div>
+    </div>
    
    )
 }

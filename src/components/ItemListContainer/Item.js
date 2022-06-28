@@ -1,6 +1,7 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-import {Button} from 'reactstrap'
+import { Button } from 'reactstrap'
+import {Link}  from 'react-router-dom' 
+
 
 const Item = ({name, id, image,  description, price, stock }) => {
   return (
@@ -11,11 +12,11 @@ const Item = ({name, id, image,  description, price, stock }) => {
       <p>{description}</p>
       <p>Precio:{price}</p>
       <Button
-    color="dark"  
-    outline
-  >
-      <Link to={`/tienda/${id}`}> Ver detalles </Link>
-  </Button>
+       color="dark"  
+       outline
+      >
+        <Link to={`/tienda/${id}`}> Ver detalles  </Link>
+       </Button>
 
       </div>
   </div>

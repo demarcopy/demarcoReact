@@ -1,28 +1,31 @@
 import React from 'react'
 import CartWidget from "../CartWidget/CartWidget"
-import {NavLink} from "react-router-dom"
-import {NavItem } from 'reactstrap'
+import {NavLink, Link} from "react-router-dom"
+import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import "./estilosNavbar.css"
 
 const Navbar = () => {
  
   return (
-    <nav id="navBar" className="navbar navbar-expand-lg bg-light">
-    <div className="container-fluid">
-    <NavLink to="/" className="navbar-brand">banshy clothes</NavLink>
-      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <NavItem> <NavLink to="/" >Inicio</NavLink> </NavItem>  
-          <NavLink to="/Tienda" >Tienda</NavLink>
-          <NavLink to="/Canguros"> Canguros </NavLink>
-          <NavLink to="/Remeras"> Remeras y Sudaderas </NavLink>
-          <NavLink to="/Pantalones"> Pantalones </NavLink>
-          <NavLink to="/Championes"> Championes </NavLink>
-        <NavItem> <NavLink to="/Recomendaciones"  >Ofertas</NavLink> </NavItem>  
-        <NavItem> <NavLink to="/Contacto" >Contacto</NavLink> </NavItem>  
-      </div>
-    <CartWidget/>
-    </div>
-  </nav>
  
+    <div id="navBarConteiner" className="navbar navbar-expand-lg bg-light">
+    <NavLink to="/" className="navbar-brand">banshy clothes</NavLink>
+      <div className="navBar">
+        <div className="tienda-navbar">
+              <UncontrolledDropdown >
+                <DropdownToggle caret  tag={Link} to="/tienda">  Tienda   </DropdownToggle>
+                  <DropdownMenu >
+                    <DropdownItem tag={Link} to="/Canguros"> Canguros </DropdownItem>
+                    <DropdownItem tag={Link} to="/Remeras"> Remeras y Sudaderas </DropdownItem>
+                    <DropdownItem tag={Link} to="/Pantalones" > Pantalones </DropdownItem>
+                    <DropdownItem tag={Link} to="/Recomendaciones"> Ofertas </DropdownItem>
+                  </DropdownMenu>
+              </UncontrolledDropdown >
+        </div>
+    </div>
+              <CartWidget/>
+  </div>
+
 
   )
 }
