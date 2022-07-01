@@ -11,7 +11,16 @@ const CartWidget = () => {
  
   return (
     <div className='cartWidget'>
-      <div className='itemsCart'> {cartLenght()}  </div>
+      <>
+       {cartLenght() !== 0 ?
+          <div className='itemsCart'> {cartLenght()}  </div> : null}
+        
+    
+      </>
+      
+     
+     
+     
       <div className='material-symbols-outlined'><Link to="/carrito"> shopping_cart</Link> </div>
     </div>
    

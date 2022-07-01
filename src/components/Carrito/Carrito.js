@@ -1,18 +1,36 @@
+import { Button } from 'reactstrap'
 import React, { useContext } from 'react'
 import {Link} from "react-router-dom"
 import {contextoCarrito} from '../Contexto/cartContext'
+import Checkout from './Checkout'
 import './estilosCarrito.css'
 
 const Carrito = () => {
   
   const {carrito, eliminarProducto, clearCart, getSubtotal, getTotal,cartLenght } = useContext(contextoCarrito)
-  
+
   return (
      <>
   {cartLenght() ===  0 ? (
-      <p>No hay productos en el carrito, suma algo!</p>
-    ) : ( 
       <div> 
+        <p>No hay productos en el carrito, suma algo!</p>
+        <button > <Link to="/tienda"> Volver a la tienda</Link> </button>
+      </div>
+
+
+    ) : ( 
+      <>
+      <div> 
+          <Button
+           tag={Link}  
+           to="/tienda"
+           color="success" 
+           className='btnCart'
+           >Seguir comprando </Button>
+          <Button
+           onClick={clearCart} 
+           color='secondary'
+           >vaciarCarrito </Button>
         <div className="productinCart">
         {carrito.map(product => 
           <div key={product.id} > 
@@ -36,12 +54,13 @@ const Carrito = () => {
           <h3>Precio total {getTotal()} </h3>
           <h3>Items totales: {cartLenght()}</h3>
         </div> 
-      <div>
-        <button onClick={clearCart}> vaciarCarrito</button>
-        <button><Link to="/tienda">Seguir comprando</Link></button>
-        <Link to="/checkout"> Comprar</Link>
-      </div>
     </div>
+
+       
+        
+          <Checkout/>
+      </>
+       
  )}
   
   </>
