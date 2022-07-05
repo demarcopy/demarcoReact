@@ -4,7 +4,6 @@ import {Link} from "react-router-dom"
 import {Button} from 'reactstrap'
 import {contextoCarrito} from '../Contexto/cartContext'
 
-
 const ItemDetail = ({product}) => {
   const addItemToCart = useContext(contextoCarrito)
   
@@ -15,10 +14,6 @@ const ItemDetail = ({product}) => {
   const volverTienda = () => {
     window.history.back()
   }
-
-
-
-
 
   return (
   <div className='ItemDetailConteiner'  key={product.id}>

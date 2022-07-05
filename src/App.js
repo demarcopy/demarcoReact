@@ -4,7 +4,6 @@ import Footer from "./components/Footer/Footer.js";
 import {BrowserRouter} from "react-router-dom";
 import 'react-loading-skeleton/dist/skeleton.css'
 import {CartContext} from "./components/Contexto/cartContext.js";
-import {app, db} from "./config/firebase"
  
 
  
