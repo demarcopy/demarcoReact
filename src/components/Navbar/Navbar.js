@@ -12,14 +12,14 @@ const Navbar = () => {
     <NavLink to="/" className="navbar-brand">banshy clothes</NavLink>
       <div className="navBar">
         <div className="tienda-navbar">
-             {/*  <UncontrolledDropdown >
+              <UncontrolledDropdown >
                 <DropdownToggle caret  tag={Link} to="/tienda">  Tienda   </DropdownToggle>
                   <DropdownMenu >
                     <DropdownItem tag={Link} to="/Canguros"> Canguros </DropdownItem>
                     <DropdownItem tag={Link} to="/Remeras"> Remeras y Sudaderas </DropdownItem>
                     <DropdownItem tag={Link} to="/Pantalones" > Pantalones </DropdownItem>
                   </DropdownMenu>
-              </UncontrolledDropdown > */}
+              </UncontrolledDropdown > 
         </div>
     </div>
               <CartWidget/>
