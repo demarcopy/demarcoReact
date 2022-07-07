@@ -58,7 +58,7 @@ const Carrito = () => {
 
        
         
-          <Checkout/>
+          <Checkout carrito ={carrito} total ={getTotal()}/>
       </>
        
  )}

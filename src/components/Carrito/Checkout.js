@@ -1,8 +1,16 @@
+import { collection } from 'firebase/firestore'
 import React from 'react'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import swal from 'sweetalert'
+import { serverTimestamp, addDoc} from 'firebase/firestore'
+import {db} from '../../utils/firebase'
+import {contextoCarrito} from '../Contexto/cartContext'
+
+
 
 const Checkout = () => {
+  
+  const {carrito, clearCart, getTotal } = useContext(contextoCarrito)
 
   const [BuyerInfo, setBuyerInfo ] = useState({
     buyerName: "",
@@ -17,18 +25,38 @@ const Checkout = () => {
         ...BuyerInfo,
         [e.target.name]: e.target.value
     })
-  }  
-  )
+  })
+
  
   const confirmCheckout = (e) => {
-    e.preventDefault()
-    swal({
-      icon: "success",
-      text: "Compra realizada"
-    })
-    // Aca ya esta ok el input para pasarlo a la base de datos.
-  }
+  
+    e.preventDefault();
+  
+    const objOrden ={
+      buyer: {
+        name: BuyerInfo.buyerName,
+        LastName: BuyerInfo.buyerLastName,
+        Email: BuyerInfo.buyerEmail,
+        Phone: BuyerInfo.buyerPhone,
+      },
+      carrito,
+      total: getTotal() ,
+      date: serverTimestamp(),
+    }
 
+    const ref = collection(db, 'orders')
+    addDoc(ref, objOrden).then((r) =>{
+        console.log(r)
+        clearCart()
+        swal({
+          title: 'Compra realizada',
+          text:  `Tu ID de la orden es: ${r.id}  `,
+          icon: "success"
+        })
+      })
+    } 
+    
+ 
  
 
  
