@@ -1,48 +1,71 @@
 .ItemDetailConteiner{
   display: flex;
-  flex-direction: column;
   border: 2px solid black;
-  width: 80%;
-  justify-content: flex-end;
-  margin-left: 10%
+  width: 100%;
+  margin-bottom: 20px;
+  
+}
+.ItemDetail {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Imagen */
+.itemImg{
+  height: 100%;
+  width: 450px;
+  margin-right: 40px;
+}
+
+.itemImg img{
+  width:  100%;
+  height: 60%;
+  margin-top: 30px;
   
 }
 
+/* Contenido */
+.ItemContent{
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  margin-right: 30px;
+}
+
+.ItemContent h3{
+  margin-left: 30%;
+
+}
+
+
+
+
 .btn-volver{
- align-self: flex-end;
+  /* align-self: flex-end; */
   cursor: pointer;
   left: 20px;
   font-size: 20px;
   font: bold;
   margin: 5px;
+  position: relative;
+  left: 95%;
 }
 
-.ItemDetail {
+
+.itemCount{
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
-}
-
-
-.ItemDetail img {
-    width:  600px;
-    height: 400px;
-    margin: 10px;
-}   
-
-.ItemContent{
-  display: flex;
-  flex-direction: column;
-  border: 2px solid black;
   justify-content: space-between;
-  height: 450px;
-  width: 12121200px;
+  padding: 10px;
+  width: 12%;
+}
+
+.countItem{
+  font-size: 18px;
 }
 
 
-.ItemDetail p   {
-    font-size: 20px;
-    margin: 10px;
+.btnaddCarrito{
+  width: 200px;
+  color: white;
 }

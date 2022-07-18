@@ -1,27 +1,25 @@
 import React from 'react'
 import CartWidget from "../CartWidget/CartWidget"
-import {NavLink, Link} from "react-router-dom"
-import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import {Link} from "react-router-dom"
+import { NavbarBrand, NavItem } from 'reactstrap';
 import "./estilosNavbar.css"
 
+
 const Navbar = () => {
+ 
+
  
   return (
  
     <div id="navBarConteiner" className="navbar navbar-expand-lg bg-light">
-    <NavLink to="/" className="navbar-brand">banshy clothes</NavLink>
-      <div className="navBar">
+
+      <NavbarBrand className='navbarBrand' tag={Link} to ="/"> banshy clothes </NavbarBrand>
+  
         <div className="tienda-navbar">
-              <UncontrolledDropdown >
-                <DropdownToggle caret  tag={Link} to="/tienda">  Tienda   </DropdownToggle>
-                  <DropdownMenu >
-                    <DropdownItem tag={Link} to="/Canguros"> Canguros </DropdownItem>
-                    <DropdownItem tag={Link} to="/Remeras"> Remeras y Sudaderas </DropdownItem>
-                    <DropdownItem tag={Link} to="/Pantalones" > Pantalones </DropdownItem>
-                  </DropdownMenu>
-              </UncontrolledDropdown > 
+                    <NavItem className='navBarItem' tag={Link} to="/Canguros"> Canguros </NavItem>
+                    <NavItem className='navBarItem' tag={Link} to="/Remeras"> Remeras </NavItem>
+                    <NavItem className='navBarItem' tag={Link} to="/Pantalones" > Pantalones </NavItem>
         </div>
-    </div>
               <CartWidget/>
   </div>
 

@@ -4,18 +4,26 @@
     justify-content: flex-start;
 } 
 
-.navBar{
-    display: flex;
+.navbarBrand{
+    margin-left: 15px;
 }
 
 .tienda-navbar {
+    display: flex;
     font-size: 16px;
+    margin-left: 20px;
 }
 
 .cartWidget{
     position: absolute;
     right: 2%;
 }
+
+.navBarItem{
+    margin: 10px;
+    text-decoration: none;
+}
+
 
 .itemsCart{
     color: red;

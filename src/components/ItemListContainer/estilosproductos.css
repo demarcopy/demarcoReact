@@ -4,11 +4,21 @@
     justify-content: center;
   }
 
-.shoplist{
-  display: flex;
-  margin: '0 auto';
+  
+  
+  
+  .shoplist{
+    display: flex;
+    margin: '0 auto';
   max-width: 80%;
   align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  padding: 10px;
+}
+
+.shoplist:hover{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  background-color: white;
 }
 
 .Item{
@@ -16,9 +26,21 @@
    display: flex;
    flex-direction: column;
    width: 400px;
+   
+
 }  
+
+
 
 .Item img{
     object-fit: cover;
     width: 200px;
+}
+
+
+
+
+.btnitemlist{
+  text-decoration: none;
+  background-color: red;
 }

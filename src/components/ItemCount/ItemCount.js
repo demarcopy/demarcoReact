@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { Button } from 'reactstrap'
 
 const ItemCount = ({Stock, StockInitial, onAdd}) => {
   const [contador, setContador] = useState(StockInitial)	
@@ -20,10 +21,37 @@ const ItemCount = ({Stock, StockInitial, onAdd}) => {
 
     return (
       <>
-      <p> Cantidad  {contador}</p>
-      <button onClick={bajarContador} >- </button>
-      <button onClick={aumentarContador} >+ </button>
-      <button onClick={confirmarContador} >Agregar al carrito </button>
+      <div className='itemCount'>
+
+
+        <Button
+        onClick={bajarContador}
+        size="sm"
+        color='dark'
+        >
+        -
+        </Button>
+                         <p className='countItem'>{contador}</p>
+        <Button
+        onClick={aumentarContador}
+        size="sm"
+        color='dark'
+        >
+        +
+        </Button>
+
+      </div>
+
+      <Button
+      onClick={confirmarContador}
+      className='btnaddCarrito'
+      color="primary"
+      >
+      Agregar al carrito
+      </Button>
+    
+    
+    {/*   <button onClick={confirmarContador} >Agregar al carrito </button> */}
       </>
   )
    

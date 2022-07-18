@@ -3,7 +3,7 @@ import { Button } from 'reactstrap'
 import {Link}  from 'react-router-dom' 
 
 
-const Item = ({name, id, image,  description, price, stock }) => {
+const Item = ({name, id, image,  description, price }) => {
   return (
     <div className='Item' key={id}>
       <img src={image} alt={id}/> 
@@ -13,9 +13,11 @@ const Item = ({name, id, image,  description, price, stock }) => {
       <p>Precio:{price}</p>
       <Button
        color="dark"  
-       outline
+       tag={Link}
+       to={`/tienda/${id}`}
+       children="Ver Detalles"
       >
-        <Link to={`/tienda/${id}`}> Ver detalles  </Link>
+      
        </Button>
 
       </div>

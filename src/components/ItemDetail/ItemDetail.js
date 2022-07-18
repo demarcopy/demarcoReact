@@ -24,15 +24,17 @@ const ItemDetail = ({product}) => {
       size="lg"
       >
     </Button> 
-   </div>
+  </div>
     <div className='ItemDetail'>
-     <img src={product.image} alt={product.id}/> 
+    
+      <div className='itemImg'>  
+        <img src={product.image} alt={product.id}/> 
+      </div>
+      
       <div className='ItemContent'>
         <h3>{product.name}</h3>
         <p>{product.description}</p>
         <p>Precio:{product.price}</p> 
-        <button><Link to="/carrito">Ir al carrito</Link></button> 
-        <button><Link to="/tienda">Seguir comprando</Link></button>
         
         <ItemCount StockInitial={1} Stock={product.stock} onAdd={onAdd} />
       </div>
