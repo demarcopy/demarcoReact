@@ -63,10 +63,10 @@ const Checkout = () => {
  
   return (
     <>
-    <hr></hr> 
-    <h1 >CHECKOUT</h1>
+      <h1 >CHECKOUT</h1>
 
-
+    <div className='cartCheckout'>
+      <div className='checkoutForm'>
         <h2 >Ingresa tus datos:</h2>
         <form onSubmit={confirmCheckout}>
             <input  value={BuyerInfo.buyerName} onChange={formHandler} required type="text" name="buyerName"     placeholder="Nombre"></input>
@@ -74,14 +74,16 @@ const Checkout = () => {
             <input  value={BuyerInfo.buyerEmail} onChange={formHandler} required type="email" name="buyerEmail" placeholder="email"></input>
             <input className="form-control" value={BuyerInfo.buyerPhone} onChange={formHandler} type="number" name="buyerPhone" placeholder="Celular"></input>
                
-                <button type="submit" >
+                <button className='btnCheckout'  type="submit" >
                 <h3> Finalizar compra</h3></button>
         </form>
 
+      </div>
+
+    </div>
+
+
         </>
-
-
-
 
   )
 }

@@ -1,6 +1,5 @@
 import React, { useContext} from 'react'
 import ItemCount from '../ItemCount/ItemCount'
-import {Link} from "react-router-dom"
 import {Button} from 'reactstrap'
 import {contextoCarrito} from '../Contexto/cartContext'
 
@@ -31,6 +30,8 @@ const ItemDetail = ({product}) => {
         <img src={product.image} alt={product.id}/> 
       </div>
       
+      
+
       <div className='ItemContent'>
         <h3>{product.name}</h3>
         <p>{product.description}</p>

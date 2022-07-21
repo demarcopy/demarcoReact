@@ -17,7 +17,6 @@ const Item = ({name, id, image,  description, price }) => {
        to={`/tienda/${id}`}
        children="Ver Detalles"
       >
-      
        </Button>
 
       </div>

@@ -32,6 +32,7 @@ const ItemListContainer = () => {
     })
   },[category] ) 
 
+
   return (
     <div className='ItemsContainer'>
     { isLoading ? <h1> <Loading/> </h1> : <ItemList  products={items} /> }

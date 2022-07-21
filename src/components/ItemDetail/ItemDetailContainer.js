@@ -14,7 +14,9 @@ const ItemDetailContainer = () => {
     const ref = doc(collectionProd, id)
     getDoc(ref)
     .then((response) =>{
-      setProduct(response.data())
+      const itemMapeado = response.data()
+      itemMapeado.id = response.id
+      setProduct(itemMapeado)
       setLoading(false)
     })
     .catch((error) =>{

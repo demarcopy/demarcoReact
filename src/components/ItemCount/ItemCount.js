@@ -45,7 +45,7 @@ const ItemCount = ({Stock, StockInitial, onAdd}) => {
       <Button
       onClick={confirmarContador}
       className='btnaddCarrito'
-      color="primary"
+      color="dark"
       >
       Agregar al carrito
       </Button>
