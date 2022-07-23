@@ -1,9 +1,9 @@
-#Documentación de la aplicación
+# Documentación de la aplicación
 ---
-##Descripción del proyecto
+## Descripción del proyecto
 Sencillo ecomerce de venta de ropa. 
 ---
-##Dependencias:
+## Dependencias:
 - Reactstrap - 9.1.1
 - Bootstrap - 5.1.3
 - Fontawesome - 6.1.1
@@ -11,7 +11,7 @@ Sencillo ecomerce de venta de ropa.
 - Sweetalert - 2.1.2
 - Firebase - 9.8.4
 ---
-##Uso e instalación
+## Uso e instalación
 1. Abrir la consola y copiar el link de abajo, esto instalara la repo del proyecto en la carpeta donde se haya ejecutado.
 ~~~
 git clone https://github.com/demarcopy/demarcoReact.git
@@ -28,5 +28,6 @@ $ npm start
 ~~~
 
 
-##Landing Page:
+### Landing Page:
+
 ![BanshyClothes](https://i.ibb.co/LYPzg3w/11.png)
