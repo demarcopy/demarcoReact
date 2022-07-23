@@ -1,6 +1,7 @@
 # Documentación de la aplicación
 ---
 ## Descripción del proyecto
+
 Sencillo ecomerce de venta de ropa. 
 ---
 ## Dependencias:
@@ -31,3 +32,9 @@ $ npm start
 ### Landing Page:
 
 ![BanshyClothes](https://i.ibb.co/LYPzg3w/11.png)
+
+### Deploy
+[Link](https://fabulous-brigadeiros-ed9fb3.netlify.app/)
+
+### Video Navegacion en YT
+[Link](https://www.youtube.com/watch?v=Sp3VSWacfFM&ab_channel=RodrigoDemarco)
