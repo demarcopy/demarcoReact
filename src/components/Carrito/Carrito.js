@@ -60,7 +60,7 @@ const Carrito = () => {
             <h3>Precio total ${getTotal()} </h3>
             <div className='btnsCart'>
               <Button onClick={clearCart} color='dark'>Limpiar Carrito</Button>
-              <Button tag={Link} to="/tienda" color="dark" className='btnCart'>Seguir comprando</Button>
+              <Button tag={Link} to="/" color="dark" className='btnCart'>Seguir comprando</Button>
               <Button tag={Link} to="/checkout" color="success" className='btnCart'>Confirmar Compra</Button>
             </div>
           </div>
