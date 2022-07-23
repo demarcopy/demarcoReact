@@ -6,30 +6,17 @@ import {faGoogle,faTwitter } from '@fortawesome/free-brands-svg-icons';
 const  Footer = () => {
   return (
     <footer className='Footer'>
-
-    
-    
-   
     <div className='redes' >
       <span>Nuestras redes sociales</span>
     </div>
-    
     <div className='brands'>
     <FontAwesomeIcon icon={faFacebook} />
     <FontAwesomeIcon icon={faTwitter} />
     <FontAwesomeIcon icon={faGoogle} />
     <FontAwesomeIcon icon={faInstagram} />
     <FontAwesomeIcon icon={faGithub} />
-  
-
-
     </div>
-
-  
-
-   
     </footer>
   )
 }
-
 export default Footer;

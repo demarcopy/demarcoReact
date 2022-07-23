@@ -1,8 +1,6 @@
 import React from 'react'
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
-import { Spinner } from 'reactstrap'
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const Loading = () => {
   return (
@@ -12,9 +10,4 @@ export const Loading = () => {
     />
     </div>
   )
-}
-
-
-export const LoadingSpinner = () => {
-  <Spinner/>
 }

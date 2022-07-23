@@ -5,6 +5,7 @@ import './estilosdetail.css'
 import {Loading} from '../../utils/Loading'
 import {collectionProd} from '../../utils/firebase'
 import {getDoc, doc } from 'firebase/firestore'
+import swal from 'sweetalert'
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
@@ -20,7 +21,11 @@ const ItemDetailContainer = () => {
       setLoading(false)
     })
     .catch((error) =>{
-      console.log(error)
+     swal({
+      icon: 'error',
+      title: 'Ups!',
+      text: 'Hubo un error, intentalo mas tarde',
+     })
     })
   }, [id])
   return (
@@ -29,5 +34,4 @@ const ItemDetailContainer = () => {
     </>
   )
 }
-
 export default ItemDetailContainer

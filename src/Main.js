@@ -5,7 +5,6 @@ import {Routes, Route} from 'react-router-dom'
 import Carrito from './components/Carrito/Carrito'
 import Checkout from './components/Carrito/Checkout'
 
-
 const Main = () => {
   return (
     <main>
@@ -15,7 +14,6 @@ const Main = () => {
             <Route path="/:category" element= {<ItemListContainer />} />
             <Route path="/carrito" element={<Carrito/>} />
             <Route path="/checkout" element={<Checkout/>} />
-            
         </Routes>
     </main>
 )

@@ -17,31 +17,20 @@ const ItemDetail = ({product}) => {
   return (
   <div className='ItemDetailConteiner'  key={product.id}>
   <div className='btn-volver'>
-    <Button 
-      close
-      onClick={volverTienda}
-      size="lg"
-      >
-    </Button> 
+    <Button close onClick={volverTienda} size="lg"> </Button> 
   </div>
     <div className='ItemDetail'>
-    
       <div className='itemImg'>  
         <img src={product.image} alt={product.id}/> 
       </div>
-      
-      
-
       <div className='ItemContent'>
         <h3>{product.name}</h3>
         <p>{product.description}</p>
         <p>Precio:{product.price}</p> 
-        
         <ItemCount StockInitial={1} Stock={product.stock} onAdd={onAdd} />
       </div>
     </div>
   </div>
   )
 }
-
 export default ItemDetail

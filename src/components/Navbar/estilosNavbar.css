@@ -6,6 +6,7 @@
 
 .navbarBrand{
     margin-left: 15px;
+    color: black;
 }
 
 .tienda-navbar {
@@ -22,10 +23,10 @@
 .navBarItem{
     margin: 10px;
     text-decoration: none;
+    color: black;
 }
 
-
 .itemsCart{
-    color: red;
+    color: black;
     font-size: 20px;
 }

@@ -5,6 +5,7 @@ import './estilosproductos.css'
 import {Loading} from '../../utils/Loading'
 import {collectionProd} from '../../utils/firebase'
 import {getDocs, query, where } from 'firebase/firestore'
+import {swal} from 'sweetalert'
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([])
@@ -28,16 +29,18 @@ const ItemListContainer = () => {
       setLoading(false)
     })
     .catch((error) =>{
-      console.log(error)
+      swal({
+        icon: 'error',
+        title: 'Ups!',
+        text: 'Hubo un error, intentalo mas tarde',
+       })
     })
   },[category] ) 
 
-
   return (
     <div className='ItemsContainer'>
-    { isLoading ? <h1> <Loading/> </h1> : <ItemList  products={items} /> }
+    { isLoading ? <Loading/>  : <ItemList  products={items} /> }
     </div>
   )
 }
-
 export default ItemListContainer

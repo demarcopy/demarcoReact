@@ -2,10 +2,7 @@
 import Main from "./Main.js";
 import Footer from "./components/Footer/Footer.js";
 import {BrowserRouter} from "react-router-dom";
-import 'react-loading-skeleton/dist/skeleton.css'
 import {CartContext} from "./components/Contexto/cartContext.js";
- 
-
  
  function App ()  {
     return (
@@ -16,7 +13,6 @@ import {CartContext} from "./components/Contexto/cartContext.js";
          </CartContext>
          <Footer/>
        </BrowserRouter>
-  
     );
 }
 

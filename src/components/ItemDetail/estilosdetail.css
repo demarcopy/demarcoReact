@@ -3,7 +3,6 @@
   border: 2px solid black;
   width: 100%;
   margin-bottom: 20px;
-  
 }
 .ItemDetail {
   display: flex;
@@ -21,7 +20,6 @@
   width:  100%;
   height: 60%;
   margin-top: 30px;
-  
 }
 
 /* Contenido */
@@ -34,11 +32,7 @@
 
 .ItemContent h3{
   margin-left: 30%;
-
 }
-
-
-
 
 .btn-volver{
   cursor: pointer;
@@ -49,7 +43,6 @@
   position: relative;
   left: 95%;
 }
-
 
 .itemCount{
   display: flex;
@@ -62,7 +55,6 @@
 .countItem{
   font-size: 18px;
 }
-
 
 .btnaddCarrito{
   width: 200px;

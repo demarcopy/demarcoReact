@@ -18,7 +18,7 @@ export const CartContext = ({children}) => {
     }else {
     item.quantity = cantidad
     SetCarrito([...carrito,item])
-        } 
+    } 
 }
 
 const eliminarProducto = (id) => {
@@ -72,4 +72,3 @@ const getTotal = () => {
         </contextoCarrito.Provider>
     );
 }
-
